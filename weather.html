@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="title" content="weather" />
+    <meta property="og:description" content="weather">
+    <meta name="author" content="Andy Dai" />
+    <title>weather</title>
+    <style>
+        weather-widget:not(:defined) {
+            border-radius: 2rem;
+            display: flex;
+            width: 25rem;
+            height: 15rem;
+            padding: 1rem;
+            background-color: white;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700">
+    <script src="js/weather.js" type="module"></script>
+</head>
+
+<body>
+    <h1>Current Weather</h1>
+    <weather-widget>
+        <p>Current weather conditions unavailable</p>
+    </weather-widget>
+    <a href="index.html">Home</a>
+</body>
+</html>

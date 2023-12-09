@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="title" content="rating-widget" />
+    <meta property="og:description" content="rating">
+    <meta name="author" content="Andy Dai" />
+    <title>rating-widget</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700">
+    <script src="js/rating.js" type="module"></script>
+</head>
+
+<body>
+    <h1>Rating Widget</h1>
+    <rating-widget>
+        <form action="https://httpbin.org/post" method="POST">
+            <label for="rating">How satisfied are you?</label>
+            <input type="hidden" name="question" value="How satisfied are you?">
+            <input type="hidden" name="sentBy" value="HTML">
+            <input type="number" id="rating" name="rating" min="1" max="5" value="0" required>
+            <button type="submit">Submit</button>
+        </form>
+    </rating-widget>
+    <a href="index.html">Home</a>
+</body>
+</html>
