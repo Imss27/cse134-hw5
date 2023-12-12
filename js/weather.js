@@ -96,9 +96,9 @@ class WeatherWidget extends HTMLElement {
     /* Assign stats to corresponding elements */
     temperatureItemEl.innerText = `${temperature}°${temperatureUnit}`;
     summaryItemEl.innerText = shortForecast;
-    windItemEl.innerText = `Wind: ${windSpeed} ${windDirection}`;
+    windItemEl.innerText = `Wind speed: ${windSpeed} ${windDirection}`;
     humidityItemEl.innerText = `Humidity: ${relativeHumidity.value}%`;
-    rainItemEl.innerText = `Chance of rain (this hour): ${probabilityOfPrecipitation.value}%`;
+    rainItemEl.innerText = `Chance of rain: ${probabilityOfPrecipitation.value}%`;
     timeEl.innerText = isDaytime ? 'It is Daytime' : 'It is Night time';
     weatherIconEl.src = icon.split(",")[0];
     weatherIconEl.alt = 'Weather condition icon';
